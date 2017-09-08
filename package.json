@@ -1,0 +1,17 @@
+{
+  "name": "is-visible",
+  "description": "Test if an HTMLElement is visible",
+  "version": "1.0.0",
+  "main": "is-visible.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcus-timtow/isVisible.git"
+  },
+  "keywords": ["htmlelement", "visible", "viewport"],
+  "author": "Marcus Timtow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcus-timtow/isVisible/issues"
+  },
+  "homepage": "https://github.com/marcus-timtow/isVisible"
+}
