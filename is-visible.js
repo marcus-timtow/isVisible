@@ -8,15 +8,15 @@
         this[name] = definition();
     }
 }("isVisible", function () {
-    let isVisible = function (e) {
-        let wa = window.scrollY;
-        let wb = wa + window.innerHeight;
+    var isVisible = function (e) {
+        var wa = window.scrollY;
+        var wb = wa + window.innerHeight;
         
-        let {top = 0, height = 0} = (e && e.getBoundingClientRect()) || {};
-        let ea = window.scrollY + top;
-        let eb = ea + height;
+        var ret = (e && e.getBoundingClientRect()) || {};
+        var ea = window.scrollY + ret.top;
+        var eb = ea + ret.height;
         
-        return !(eb < wa || ea > wb);
+        return !(eb <= wa || ea >= wb);
     };
     
     return isVisible;
